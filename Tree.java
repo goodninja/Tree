@@ -73,7 +73,7 @@ public class Tree <V extends Comparable<V>> {
                 result = rightSwap(result);
             }
             if (result.left != null && result.left.color == Color.RED &&
-                    result.left.left != null && result._eft.left.color == Color.RED) {
+                    result.left.left != null && result.left.left.color == Color.RED) {
                 needRebalance = true;
                 result = leftSwap(result);
             }
